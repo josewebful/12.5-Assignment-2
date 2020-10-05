@@ -12,7 +12,7 @@ function getDogImage(num){
 function displayResults(responseJson){
   console.log(responseJson);
 $('.results').empty();
-
+$('.results').append('<h2>Look at these dogs!</h2>')
 for(let i=0; i < responseJson.message.length; i++){
    $('.results').append(
     `<img src="${responseJson.message[i]}" class="results-img">`
